@@ -43,7 +43,7 @@ document.addEventListener("click", async function (e) {
 
 //Fungsi untuk mendapatkan data film dari API
 function getMovies(keyword) {
-  return fetch("http://www.omdbapi.com/?apikey=2efeaa26&s=" + keyword)
+  return fetch("https://www.omdbapi.com/?apikey=2efeaa26&s=" + keyword)
     .then((response) => response.json())
     .then((response) => response.Search);
 }
@@ -60,7 +60,7 @@ function updateUI(movies) {
 
 // fungsi untuk mendapatkan data data detail film/series
 function showDetail(id) {
-  return fetch("http://www.omdbapi.com/?apikey=2efeaa26&i=" + id)
+  return fetch("https://www.omdbapi.com/?apikey=2efeaa26&i=" + id)
     .then((response) => response.json())
     .then((movie) => movie);
 }
