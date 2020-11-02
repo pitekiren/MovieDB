@@ -3,16 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Externeal Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- External Font -->
+
+    <!-- Style -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Style -->
+
+
     <title>MovieDB</title>
   </head>
   <body>
-    <h1>MovieDB</h1>
+
+    <!-- Website Header -->
+    <div class="home-header">
+      <h1>Movie<span style="background-color: #ffa31a; border-radius: 5px; color: black;">DB</span></h1>
+    </div>
+    <!-- Website Header -->
+
+    <!-- Search Bar -->
     <div class="search-bar">
-      <input type="text" placeholder="input text here" class="input-keyword" />
+      <input type="text" placeholder="Search Movie" class="input-keyword" />
       <button type="button" class="search-btn">search</button>
     </div>
+    <!-- Search Bar -->
+
+    <!-- Movie Container -->
     <div class="movie-container"></div>
+    <!-- Movie Container -->
+
     <!-- The Modal -->
     <div id="detailModal" class="modal">
       <!-- Modal content -->
@@ -21,14 +42,10 @@
           <span class="close">&times;</span>
           <h2>Movie Detail</h2>
         </div>
-        <div class="modal-body">
-
-        </div>
-        <div class="modal-footer">
-          
-          
-
-    </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer"></div>
+      </div>
+      <!-- The Modal       -->
 
     <script src="script.js"></script>
   </body>
