@@ -21,6 +21,15 @@ body {
   margin: 10px 0px auto;
   text-align: center;
 }
+
+.home-header #title span {
+  background-color: #ffa31a;
+  border-radius: 5px;
+  color: black;
+}
+.home-header #subtitle a {
+  color: #ffa31a;
+}
 /* Title : End */
 
 /* Search Bar : Start */
@@ -28,8 +37,7 @@ body {
   width: 80%;
   height: 50px;
   display: flex;
-  margin: 20px auto;
-  /* transform: scale(2); */
+  margin: 3% auto;
 }
 
 .search-bar .input-keyword {
@@ -43,7 +51,6 @@ body {
   background-color: #292929;
   border: none;
   font-size: small;
-  /* padding: 10px 22px; */
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -52,11 +59,12 @@ body {
 
 /* Movie Container : Start */
 .movie-container {
-  margin: 50px auto;
+  margin: 5% auto;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 10px;
+  /* justify-content: space-around; */
 }
 
 /* Movie Cards : Start*/
